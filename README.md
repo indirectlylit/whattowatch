@@ -14,3 +14,15 @@ of a movie once it's clicked. You can use whatever technologies and
 methods you want to accomplish this task; the only requirement is to
 use Django as the web framework. You can also add other features such
 as search functionality or single-page view.
+
+
+So to get things started, do the following:
+
+1. Clone this repo into your local machine (DO NOT FORK!)
+2. Create a new repository in your github account
+3. Change your local repository's origin remote to point to your new remote Github repository
+4. Once you're satisfied with your code, push your local repository into the remote Github repository
+5. Send us the link to your Github repo!
+
+
+That's it! We'll review your code soon and get back to you once we're done!
