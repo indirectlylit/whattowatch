@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def landing_page(request):
-    return HttpResponse("This could be the start of a beautiful program!", content_type="text/plain")
+    return render(request, "starter/landing_page.html")
