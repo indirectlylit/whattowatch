@@ -8,7 +8,7 @@ freedom, we've put together this short practice project. To make
 it a bit faster for you to get started, we put together this
 skeleton repository that you can use as a starting point.
 
-Within this repository's `starter/data/` folder is a `movies.json`
+Within this repository's `starter/data/` folder is a `more_movies.json`
 file, which is a snapshot of the Rotten Tomatoes API. Your task is to
 display all the movies (e.g. in a list), and allow the user to view details
 of a movie once it's clicked. You can use whatever technologies and
