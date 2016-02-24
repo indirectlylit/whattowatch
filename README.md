@@ -1,11 +1,15 @@
 # Requirements & Setup
 
-Requires Python 3.5.1
+Tested with Python 3.5.1
 
-Installed via `pip install -r requirements.txt`:
+```
+pip install -r requirements.txt   # requires Django 1.9
+python manage.py migrate
+python manage.py createsuperuser  # set your admin creds
+python manage.py runserver
+```
 
-* Django==1.9.2
-
+Navigate to the admin page: [127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) and enter your admin credentials as set above.
 
 # Notes
 
