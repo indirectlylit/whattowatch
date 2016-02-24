@@ -1,0 +1,10 @@
+/* © Devon Rueckner 2016 */
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
