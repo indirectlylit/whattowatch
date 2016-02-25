@@ -1,3 +1,5 @@
 https://github.com/anton44eg/rottentomatoes/zipball/master # supports py3
 jupyter
 requests
+Pillow
+python-thumbnails
