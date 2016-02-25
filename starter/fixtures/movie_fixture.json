@@ -113,7 +113,7 @@
       "mpaa_rating": "R",
       "synopsis": "Based on the book 13 Hours: The Inside Account of What Really Happened in Benghazi.",
       "title": "13 Hours: The Secret Soldiers Of Benghazi",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Rotten"
     },
     "model": "starter.Movie",
@@ -161,7 +161,7 @@
       "mpaa_rating": "PG-13",
       "synopsis": "The true love story of Laurel Hester and Stacie Andree and their fight for justice. A decorated New Jersey police detective, Laurel is diagnosed with cancer and wants to leave her hard earned pension to her domestic partner, Stacie. However the county officials, Freeholders, conspire to prevent Laurel from doing this. Hard-nosed detective Dane Wells, and activist Steven Goldstein, unite in Laurel and Stacie's defense, rallying police officers and ordinary citizens to support their struggle for equality.",
       "title": "Freeheld",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Rotten"
     },
     "model": "starter.Movie",
@@ -181,7 +181,7 @@
       "mpaa_rating": "R",
       "synopsis": "This is an expansive, rib-tickling, and subversive comedy in which Moore, playing the role of \"invader,\" visits a host of nations to learn how the U.S. could improve its own prospects. The creator of Fahrenheit 9/11 and Bowling for Columbine is back with this hilarious and eye-opening call to arms. Turns out the solutions to America's most entrenched problems already existed in the world - they're just waiting to be co-opted.",
       "title": "Where to Invade Next",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Certified Fresh"
     },
     "model": "starter.Movie",
@@ -301,7 +301,7 @@
       "mpaa_rating": "PG-13",
       "synopsis": "The second half of Suzanne Collins' final Hunger Games book is adapted in this Lionsgate production. ~ Jeremy Wheeler, Rovi",
       "title": "The Hunger Games: Mockingjay - Part 2",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Fresh"
     },
     "model": "starter.Movie",
@@ -349,7 +349,7 @@
       "mpaa_rating": "PG-13",
       "synopsis": "Against the backdrop of Japan's Aokigahara forest, where people go to end their lives, an American woman braves the mysterious, uncharted terrain to search for her missing sister.",
       "title": "The Forest",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Rotten"
     },
     "model": "starter.Movie",
@@ -357,7 +357,7 @@
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 80,
       "actors": [
         "Diogo Morgado",
@@ -374,14 +374,14 @@
       "synopsis": "This major motion picture event -- an experience created to be shared among families and communities across the U.S. -- brings the story of Jesus' life to audiences through compelling cinematic storytelling that is both powerful and inspirational. Told with the scope and scale of an action epic, the film features powerful performances, exotic locales, dazzling visual effects and a rich orchestral score from Oscar (R)-winner Hans Zimmer. Portuguese actor Diogo Morgado portrays the role of Jesus as the film spans from his humble birth through his teachings, crucifixion and ultimate resurrection (c) Fox",
       "title": "Son Of God",
       "imdb_id": "3210686",
-      "critics_rating": null
+      "critics_rating": ""
     },
     "model": "starter.Movie",
     "pk": "771366740"
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 120,
       "actors": [
         "Sophia Black-D'Elia",
@@ -398,7 +398,7 @@
       "synopsis": "A teenager prospers after using an Almanac when time traveling, but doesn't understand the ramifications of what he's done until it's too late in this Platinum Dunes production for Paramount Pictures. ~ Jeremy Wheeler, Rovi",
       "title": "Welcome to Yesterday",
       "imdb_id": "2436386",
-      "critics_rating": null
+      "critics_rating": ""
     },
     "model": "starter.Movie",
     "pk": "771355515"
@@ -469,7 +469,7 @@
       "mpaa_rating": "PG-13",
       "synopsis": "Adonis Johnson Creed (Michael B. Jordan), the son of former heavyweight champion Apollo Creed, attempts to follow in his father's footsteps and become a boxing legend in his own right. Apollo died in the ring in the 1980s at the hand of Russian pugilist Ivan Drago, forcing Adonis to grow up without his dad in his life. The young man travels to Philadelphia to find his late father's nemesis-turned-best friend, Rocky Balboa (Sylvester Stallone), in order to recruit him as a trainer. Balboa soon takes the young Creed under his wing and helps him get in shape for a shot at the title. Ryan Coogler directs this spin-off of the hugely successful Rocky franchise.",
       "title": "Creed",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Certified Fresh"
     },
     "model": "starter.Movie",
@@ -477,7 +477,7 @@
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 102,
       "actors": [
         "Kit Harington",
@@ -494,7 +494,7 @@
       "synopsis": "Set in 79 A.D., Pompeii tells the epic story of Milo (Kit Harington), a slave turned invincible gladiator who finds himself in a race against time to save his true love Cassia (Emily Browning), the beautiful daughter of a wealthy merchant who has been unwillingly betrothed to a corrupt Roman Senator. As Mount Vesuvius erupts in a torrent of blazing lava, Milo must fight his way out of the arena in order to save his beloved as the once magnificent Pompeii crumbles around him. -- (C) Sony",
       "title": "Pompeii",
       "imdb_id": "1921064",
-      "critics_rating": null
+      "critics_rating": ""
     },
     "model": "starter.Movie",
     "pk": "771242147"
@@ -540,7 +540,7 @@
       "synopsis": "MAVIS! is the first documentary on gospel/soul music legend and civil rights icon Mavis Staples and her family group, The Staple Singers. From freedom songs in the '60s and hits like \"I'll Take You There\" in the '70s, to her recent Grammy-winning work with Wilco's Jeff Tweedy, Mavis has managed to transform herself as she goes, yet never alters. After 60 years performing, she's making the most vital music of her career, and her message of love and equality is needed now more than ever.",
       "title": "Mavis!",
       "imdb_id": "4224328",
-      "critics_rating": null
+      "critics_rating": ""
     },
     "model": "starter.Movie",
     "pk": "771413301"
@@ -587,7 +587,7 @@
       "mpaa_rating": "PG-13",
       "synopsis": "16-year-old Cassie Sullivan tries to survive in a world devastated by the waves of an alien invasion that has already decimated the population and knocked mankind back to the Stone Age.",
       "title": "The 5th Wave",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Rotten"
     },
     "model": "starter.Movie",
@@ -595,7 +595,7 @@
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 109,
       "actors": [
         "Elizabeth Olsen",
@@ -612,7 +612,7 @@
       "synopsis": "Based on Emile Zola's scandalous novel, Therese Raquin, IN SECRET is a tale of obsessive love, adultery and revenge set in the lower depths of 1860s Paris. Therese (Elizabeth Olsen of \"Martha Marcy May Marlene\"), a sexually repressed beautiful young woman, is trapped into a loveless marriage to her sickly cousin, Camille (Tom Felton of the \"Harry Potter\" franchise), by her domineering aunt, Madame Raquin (two-time Academy Award winner Jessica Lange). Therese spends her days confined behind the counter of a small shop and her evenings watching Madame play dominos with an eclectic group. After she meets her husband's alluring childhood friend, Laurent (Oscar Isaac of \"Inside Llewyn Davis\"), she embarks on an illicit affair that leads to tragic consequences. (c) Roadside",
       "title": "In Secret",
       "imdb_id": "0409379",
-      "critics_rating": null
+      "critics_rating": ""
     },
     "model": "starter.Movie",
     "pk": "771313084"
@@ -643,7 +643,7 @@
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 93,
       "actors": [
         "Tim Roth",
@@ -659,7 +659,7 @@
       "mpaa_rating": "Unrated",
       "synopsis": "Caregiver, David works with the terminally ill. Meticulous, effective and passionate about his job, he builds relationships that go beyond the medical setting and creates true intimacy with his patients. But in his private life, David is inefficient, awkward and reserved. He needs all his patients as much as they need him.",
       "title": "Chronic",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Fresh"
     },
     "model": "starter.Movie",
@@ -683,7 +683,7 @@
       "mpaa_rating": "PG-13",
       "synopsis": "The Boy is a frightening thrill ride directed by William Brent Bell (The Devil Inside) starring Lauren Cohan (\"The Walking Dead\"). Greta (Cohan) is a young American woman who takes a job as a nanny in a remote English village, only to discover that the family's 8-year-old is a life-sized doll that the parents care for just like a real boy, as a way to cope with the death of their actual son 20 years prior. After violating a list of strict rules, a series of disturbing and inexplicable events bring Greta's worst nightmare to life, leading her to believe that the doll is actually alive.",
       "title": "The Boy",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Rotten"
     },
     "model": "starter.Movie",
@@ -707,7 +707,7 @@
       "mpaa_rating": "PG-13",
       "synopsis": "Kevin Hart and Ice Cube lead the returning lineup of Ride Along 2, the sequel to the blockbuster action-comedy that gave us the year's most popular comedy duo. Joining Hart and Cube for the next chapter of the series are director Tim Story, as well as Cube's fellow producers-Will Packer, Matt Alvarez and Larry Brezner-who will produce alongside Cube.",
       "title": "Ride Along 2",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Rotten"
     },
     "model": "starter.Movie",
@@ -731,7 +731,7 @@
       "mpaa_rating": "R",
       "synopsis": "Both highly suspenseful and deeply emotional, ROOM is a unique and touching exploration of the boundless love between a mother and her child. After 5-year-old Jack (Jacob Tremblay) and his Ma (Brie Larson) escape from the enclosed surroundings that Jack has known his entire life, the boy makes a thrilling discovery: the outside world. As he experiences all the joy, excitement, and fear that this new adventure brings, he holds tight to the one thing that matters most of all--his special bond with his loving and devoted Ma.",
       "title": "Room",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Certified Fresh"
     },
     "model": "starter.Movie",
@@ -777,7 +777,7 @@
       "mpaa_rating": "R",
       "synopsis": "A man struggles with his inability to connect with other people.",
       "title": "Anomalisa",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Certified Fresh"
     },
     "model": "starter.Movie",
@@ -785,7 +785,7 @@
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 93,
       "actors": [
         "Forest Whitaker",
@@ -802,7 +802,7 @@
       "synopsis": "Years after a drunken car crash that almost took his life, Tommy Carter has reinvented himself as a therapist/spiritual advisor who advocates a synthesis of world religions and positivity. He's parlayed this vocation into a successful book release that one day draws the attention of Angel Sanchez, a profoundly troubled man fixated on the \"untimely\" death of his mother. When Carter takes on Sanchez as a personal client in an effort to raise funds for his indebted brother Ben, things quickly take a turn for the worse. Angel needs much more than a simple life coach. -- (C) Lionsgate",
       "title": "Repentance",
       "imdb_id": "2012665",
-      "critics_rating": null
+      "critics_rating": ""
     },
     "model": "starter.Movie",
     "pk": "771363113"
@@ -881,7 +881,7 @@
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 126,
       "actors": [
         "Hideaki Anno",
@@ -921,7 +921,7 @@
       "mpaa_rating": "R",
       "synopsis": "In this adaptation of the novel \"The Price of Salt\" by Patricia Highsmith, Therese (Rooney Mara), a young department-store clerk in 1950s Manhattan, meets Carol (Cate Blanchett), a beautiful older woman stuck in a depressing marriage of convenience. As their bond deepens and they become romantically involved, Carol finds the strength to leave her husband (Kyle Chandler). Unfortunately, her spouse starts to raise questions about her fitness as a mother when he realizes that Carol's relationships with her best friend Abby (Sarah Paulson) and Therese are more than just friendships. Directed by Todd Haynes.",
       "title": "Carol",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Certified Fresh"
     },
     "model": "starter.Movie",
@@ -929,7 +929,7 @@
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 120,
       "actors": [
         "Dakota Johnson",
@@ -945,7 +945,7 @@
       "mpaa_rating": "R",
       "synopsis": "Rock legend Marianne Lane is recuperating on the volcanic island of Pantelleria with her partner Paul when iconoclast record producer and old flame Harry unexpectedly arrives with his daughter Penelope and interrupts their holiday, bringing with him an A-bomb blast of nostalgia from which there can be no rescue.",
       "title": "A Bigger Splash",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Fresh"
     },
     "model": "starter.Movie",
@@ -953,7 +953,7 @@
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 135,
       "actors": [
         "Thomas Kretschmann",
@@ -970,7 +970,7 @@
       "synopsis": "STALINGRAD is an epic look at the battle that turned the tide of World War II. A band of determined Russian soldiers fight to hold a strategic building in their devastated city against a ruthless German army, and in the process become deeply connected to two Russian women who have been living there. Presented in IMAX 3D, the scale of the battle contrasts dramatically with the human drama of the Russian soldiers, the few remaining civilians and their invaders into Stalingrad. (c) Sony Worldwide",
       "title": "Stalingrad",
       "imdb_id": "1966566",
-      "critics_rating": null
+      "critics_rating": ""
     },
     "model": "starter.Movie",
     "pk": "771370659"
@@ -1089,15 +1089,15 @@
       "mpaa_rating": "Unrated",
       "synopsis": "Taking place 500 years after the Havoc in Heaven, the Tang Priest is appointed by Buddha to go to the West to fetch the sacred scriptures, only to accidentally free the Monkey King. With Lady White aiming to break up the team assembled to defeat her, the Monkey King must fight in order to save his world!",
       "title": "The Monkey King 2 3D (San Da Bai Gu Jing)",
-      "imdb_id": null,
-      "critics_rating": null
+      "imdb_id": "",
+      "critics_rating": ""
     },
     "model": "starter.Movie",
     "pk": "771436735"
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 96,
       "actors": [
         "Adam Bakri",
@@ -1121,7 +1121,7 @@
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 110,
       "actors": [
         "Liam Neeson",
@@ -1138,7 +1138,7 @@
       "synopsis": "Global action star Liam Neeson stars in NON-STOP, a suspense thriller played out at 40,000 feet in the air. During a transatlantic flight from New York City to London, U.S. Air Marshal Bill Marks (Neeson) receives a series of cryptic text messages demanding that he instruct the government to transfer $150 million into an off-shore account. Until he secures the money, a passenger on his flight will be killed every 20 minutes. NON-STOP, which reunites Neeson with UNKNOWN director Jaume Collet-Serra and producer Joel Silver, co-stars Golden Globe Award winner Julianne Moore and will be released by Universal Pictures on February 28, 2014. The StudioCanal production is also produced by Andrew Rona and Steve Richards. (C) Universal",
       "title": "Non-Stop",
       "imdb_id": "2024469",
-      "critics_rating": null
+      "critics_rating": ""
     },
     "model": "starter.Movie",
     "pk": "771304322"
@@ -1217,7 +1217,7 @@
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 112,
       "actors": [
         "Luminita Gheorghiu",
@@ -1329,7 +1329,7 @@
       "mpaa_rating": "Unrated",
       "synopsis": "When a group of cannibal savages kidnaps settlers from the small town of Bright Hope, an unlikely team of gunslingers, led by Sheriff Franklin Hunt, sets out to bring them home. But their enemy is more ruthless than anyone could have imagined, putting their mission - and survival itself - in serious jeopardy. This is a gritty action-packed thriller chronicling a terrifying rescue mission in the Old West.",
       "title": "Bone Tomahawk",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Certified Fresh"
     },
     "model": "starter.Movie",
@@ -1377,7 +1377,7 @@
       "mpaa_rating": "R",
       "synopsis": "This spoof from the Wayans Brothers parodies the ultra-popular novel/film series Fifty Shades of Grey.",
       "title": "Fifty Shades of Black",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Rotten"
     },
     "model": "starter.Movie",
@@ -1473,7 +1473,7 @@
       "mpaa_rating": "R",
       "synopsis": "In 1947, Dalton Trumbo (Bryan Cranston) was Hollywood's top screenwriter until he and other artists were jailed and blacklisted for their political beliefs. TRUMBO (directed by Jay Roach) recounts how Dalton used words and wit to win two Academy Awards and expose the absurdity and injustice of the blacklist, which entangled everyone from gossip columnist Hedda Hopper (Helen Mirren) to John Wayne, Kirk Douglas and Otto Preminger.",
       "title": "Trumbo",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Fresh"
     },
     "model": "starter.Movie",
@@ -1481,7 +1481,7 @@
   },
   {
     "fields": {
-      "audience_rating": null,
+      "audience_rating": "",
       "runtime": 115,
       "actors": [
         "Casey Affleck",
@@ -1520,7 +1520,7 @@
       "mpaa_rating": "Unrated",
       "synopsis": "When two poets with bipolar disorder meet in a treatment facility, their chemistry is instant and intense driving each other's mania to new heights. They pursue their passion which breaks outside the bounds of sanity, swinging them from fantastical highs to tormented lows until they ultimately must choose between sanity and love.",
       "title": "Touched With Fire",
-      "imdb_id": null,
+      "imdb_id": "",
       "critics_rating": "Fresh"
     },
     "model": "starter.Movie",
@@ -1567,8 +1567,8 @@
       "mpaa_rating": "Unrated",
       "synopsis": "This is the story of Neerja Bhanot, a 22 year old part time model, who was the chief flight attendant on a flight that was hijacked by Palestinian extremists. Neerja had escaped an abusive marriage at a very young age and as a life change, decided to become an air hostess. Throughout the horrifying 17-hour situation, Neerja didn't succumb to her fears and instead she used her courage, wits and compassion to make sure that the passengers were protected, going as far as to hiding the passports of the American passengers. Through her swift thinking and brave actions, she managed to save the lives of 359 passengers and crew on board out of 379, all at the cost of her own life.",
       "title": "Neerja",
-      "imdb_id": null,
-      "critics_rating": null
+      "imdb_id": "",
+      "critics_rating": ""
     },
     "model": "starter.Movie",
     "pk": "771435588"
