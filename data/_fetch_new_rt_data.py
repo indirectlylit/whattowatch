@@ -12,7 +12,7 @@ BOX_OFFICE_COUNTRIES = [
 
 LIMIT = 50                      # max allowed by rotten tomatoes
 
-OUTPUT_FILE = "starter/data/more_movies.json"
+OUTPUT_FILE = "download/more_movies.json"
 
 
 def main():
