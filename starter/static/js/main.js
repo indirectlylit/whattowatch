@@ -19,17 +19,6 @@ app.saved = [];
 app.shelved = [];
 
 
-// sort movies by average rating
-app.movies.sort(function(a, b) {
-  if (a.avg_score < b.avg_score) {
-    return 1;
-  } else if (a.avg_score > b.avg_score) {
-    return -1;
-  }
-  return 0;
-});
-
-
 // set the list of available IDs based on current app state
 app.updateAvailableList = function() {
   app.available = app.movies.filter(function(movie) {
@@ -82,6 +71,16 @@ $(function() {
   app.movies.forEach(function(m) {
     app.movie_map[m.id] = m;
     m.avg_score = (m.audience_score + m.critics_score) / 2;
+  });
+
+  // sort movies by average rating
+  app.movies.sort(function(a, b) {
+    if (a.avg_score < b.avg_score) {
+      return 1;
+    } else if (a.avg_score > b.avg_score) {
+      return -1;
+    }
+    return 0;
   });
 
   app.updateAvailableList();
