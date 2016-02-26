@@ -1,5 +1,5 @@
 <!-- © Devon Rueckner 2016 -->
-<pinnedmovie>
+<pinnedmovie class="{ hidden: !app.isSaved(id) }">
 
   <div class="info clickable">
     <thumbnail></thumbnail>

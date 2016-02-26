@@ -1,5 +1,5 @@
 <!-- © Devon Rueckner 2016 -->
-<shelvedmovie>
+<shelvedmovie class="{ hidden: !app.isShelved(id) }">
 
   <div class="info clickable">
     some info some info some info some info some info some info some info some info

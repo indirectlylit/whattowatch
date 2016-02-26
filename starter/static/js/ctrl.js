@@ -43,3 +43,33 @@ app.ctrl.setAudMin = function(x) {
   app.trigger('update');
 };
 
+app.ctrl.yep = function(id) {
+  console.log(id);
+  if (app.saved.indexOf(id) == -1) {
+    app.saved.push(id);
+  }
+
+  // if was shelved, move it over
+  var index = app.shelved.indexOf(id);
+  if (index != -1) {
+    app.shelved.splice(index, 1);
+  }
+
+  app.updateAvailableList();
+  app.trigger('update');
+};
+
+app.ctrl.nope = function(id) {
+  if (app.shelved.indexOf(id) == -1) {
+    app.shelved.push(id);
+  }
+
+  // if was saved, move it over
+  var index = app.saved.indexOf(id);
+  if (index != -1) {
+    app.saved.splice(index, 1);
+  }
+
+  app.updateAvailableList();
+  app.trigger('update');
+};

@@ -11,13 +11,23 @@
       <div>{ audience_score } - Audience</div>
     </div>
     <div class="buttons">
-      <div class="clickable">✔</div>
-      <div class="clickable">✖</div>
+      <div class="clickable" onclick="{ nope }">✖</div>
+      <div class="clickable" onclick="{ yep }">✔</div>
     </div>
   </div>
 
 
-  <script></script>
+  <script>
+  yep() {
+    console.log("hi");
+    app.ctrl.yep(this.id);
+  }
+
+  nope() {
+    app.ctrl.nope(this.id);
+  }
+
+  </script>
 
 
   <style scoped>

@@ -37,6 +37,10 @@ app.updateAvailableList = function() {
         return false;
       } else if (movie.audience_score < app.audience_min) {
         return false;
+      } else if (app.saved.indexOf(movie.id) != -1) {
+        return false;
+      } else if (app.shelved.indexOf(movie.id) != -1) {
+        return false;
       }
       return true;
     })
@@ -49,6 +53,18 @@ app.updateAvailableList = function() {
 // check if an ID is available
 app.isAvailable = function(id) {
   return app.available.indexOf(id) != -1;
+};
+
+
+// check if an ID is saved
+app.isSaved = function(id) {
+  return app.saved.indexOf(id) != -1;
+};
+
+
+// check if an ID is shelved
+app.isShelved = function(id) {
+  return app.shelved.indexOf(id) != -1;
 };
 
 

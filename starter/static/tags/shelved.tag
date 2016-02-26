@@ -1,15 +1,7 @@
 <!-- © Devon Rueckner 2016 -->
 <shelved>
 
-  <shelvedmovie></shelvedmovie>
-  <shelvedmovie></shelvedmovie>
-  <shelvedmovie></shelvedmovie>
-  <shelvedmovie></shelvedmovie>
-  <shelvedmovie></shelvedmovie>
-  <shelvedmovie></shelvedmovie>
-  <shelvedmovie></shelvedmovie>
-  <shelvedmovie></shelvedmovie>
-  <shelvedmovie></shelvedmovie>
+  <shelvedmovie each={ app.movies }></shelvedmovie>
 
   <script></script>
 

@@ -7,7 +7,7 @@
 
     <div class="main">
 
-      <div class="col saved">
+      <div class="col saved { hidden: !app.saved.length }">
         <h2>Saved</h2>
         <pinned></pinned>
       </div>
@@ -22,7 +22,7 @@
         <search></search>
         <h3>Minimum Scores</h3>
         <ratings></ratings>
-        <h3>Shelved</h3>
+        <h3 class="{ hidden: !app.shelved.length }">Shelved</h3>
         <shelved></shelved>
       </div>
 

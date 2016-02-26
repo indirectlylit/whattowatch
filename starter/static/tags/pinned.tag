@@ -1,15 +1,7 @@
 <!-- © Devon Rueckner 2016 -->
 <pinned>
 
-  <pinnedmovie></pinnedmovie>
-  <pinnedmovie></pinnedmovie>
-  <pinnedmovie></pinnedmovie>
-  <pinnedmovie></pinnedmovie>
-  <pinnedmovie></pinnedmovie>
-  <pinnedmovie></pinnedmovie>
-  <pinnedmovie></pinnedmovie>
-  <pinnedmovie></pinnedmovie>
-  <pinnedmovie></pinnedmovie>
+  <pinnedmovie each={ app.movies }></pinnedmovie>
 
   <script></script>
 
