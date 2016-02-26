@@ -10,13 +10,20 @@ riot.observable(app);
 
 
 // application state
-// app.selected = null; // id of movie show in lightbox, if applicable
-app.selected = "771254328"; // id of movie show in lightbox, if applicable
+app.selected = null; // id of movie show in lightbox, if applicable
 
 app.movie_map = {};
 app.movies.forEach(function(m) {
   app.movie_map[m.id] = m;
 });
+
+
+// globally update views when the model changes
+app.on('update', function() {
+  console.log('received command to update');
+  app.rootTag.update();
+});
+
 
 // app initialization
 $(function() {

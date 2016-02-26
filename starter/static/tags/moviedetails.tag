@@ -9,33 +9,25 @@
       <div><img src="/static/posters/{ app.selected }.jpg"></div>
       <div class="details">
         <h2>{ app.movie_map[app.selected].title }</h2>
-        <div>
-          { app.movie_map[app.selected].mpaa_rating },
-          { app.movie_map[app.selected].year }
-        </div>
-        <br>
-        <div>
-          <span class="score">
-            { app.movie_map[app.selected].critics_score }
-          </span>
-          from the critics
-        </div>
-        <div>
-          <span class="score">
-            { app.movie_map[app.selected].audience_score }
-          </span>
-          from the audience
-        </div>
-        <div if={ app.movie_map[app.selected].details }>
-          <p>
+        <ul>
+          <li>Rated: { app.movie_map[app.selected].mpaa_rating }</li>
+          <li>Year: { app.movie_map[app.selected].year }</li>
+          <li if={ app.movie_map[app.selected].details }>
+            Actors: { app.movie_map[app.selected].details.actors }
+          </li>
+          <li if={ app.movie_map[app.selected].details }>
+            Runtime: { app.movie_map[app.selected].details.runtime } min
+          </li>
+          <li>{ app.movie_map[app.selected].critics_score } from the critics</li>
+          <li>{ app.movie_map[app.selected].audience_score } from the audience</li>
+          <li if={ app.movie_map[app.selected].details }>
             Links:
-            <a target="_blank" href="{ app.movie_map[app.selected].details.imdb_link} ">IMDB</a>
-            <a target="_blank" href="{ app.movie_map[app.selected].details.rt_link} ">Rotten Tomatoes</a>
-          </p>
-          <br>
-          <p>
-            { app.movie_map[app.selected].details.synopsis }
-          </p>
+            <a target="_blank" href="http://www.imdb.com/title/tt{ app.movie_map[app.selected].details.imdb_id }/">IMDB</a>,
+            <a target="_blank" href="{ app.movie_map[app.selected].details.rt_link }">Rotten Tomatoes</a>
+          </li>
+        </ul>
+        <div if={ app.movie_map[app.selected].details }>
+          { app.movie_map[app.selected].details.synopsis }
         </div>
       </div>
     </div>

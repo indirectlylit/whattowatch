@@ -34,3 +34,11 @@ h1 {
 .clickable:hover {
   color: white;
 }
+
+a {
+  color: #B3B3B3;
+}
+
+a:hover {
+  color: white;
+}
