@@ -16,8 +16,7 @@
 
   <style scoped>
   :scope {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
   }
 
   </style>

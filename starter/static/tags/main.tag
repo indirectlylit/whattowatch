@@ -2,21 +2,33 @@
 <main>
 
   <div class="wrapper">
+
+    <h1>What to Watch?</h1>
+
     <div class="main">
-      <h1>What to Watch?</h1>
-      <h3>Saved</h3>
-      <pinned></pinned>
-      <h3>Available</h3>
-      <available></available>
+
+      <div class="saved">
+        <h2>Saved</h2>
+        <pinned></pinned>
+      </div>
+
+      <div class="available">
+        <h2>Available</h2>
+        <available></available>
+      </div>
+
+      <div class="filter">
+        <h2>Filter</h2>
+        <search></search>
+        <h3>Minimum Scores</h3>
+        <ratings></ratings>
+        <h3>Shelved</h3>
+        <shelved></shelved>
+      </div>
+
     </div>
-    <div class="filter">
-      <h2>Filter</h2>
-      <search></search>
-      <h3>Minimum Scores</h3>
-      <ratings></ratings>
-      <h3>Shelved</h3>
-      <shelved></shelved>
-    </div>
+
+
   </div>
   <moviedetails class="hidden"></moviedetails>
 
@@ -24,10 +36,14 @@
 
 
   <style scoped>
-  :scope {
-  }
+  :scope {}
 
   .wrapper {
+    margin: auto;
+    max-width: 1000px;
+  }
+
+  .main {
     display: flex;
     flex-direction: row-reverse;
   }
@@ -36,18 +52,21 @@
     margin-right: 40px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    max-width: 500px;
+    width: 300px;
   }
 
-  .main {
+  .available {
     flex-grow: 3;
   }
 
-  shelved {
-    display: block;
-    flex-grow: 1;
-    overflow: auto;
+  .saved {
+    flex-grow: 0;
+  }
+
+  @media screen and (max-width: 800px) {
+    .main {
+      flex-direction: column-reverse;
+    }
   }
 
   </style>
