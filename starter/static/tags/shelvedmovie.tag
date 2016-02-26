@@ -2,18 +2,27 @@
 <shelvedmovie class="{ hidden: !app.isShelved(id) }">
 
   <div class="info clickable">
-    some info some info some info some info some info some info some info some info
+    <div>
+      <div class="title">{ title }</div>
+      <div>{ mpaa_rating }, { year }</div>
+    </div>
   </div>
-  <div class="removeBtn clickable">
+  <div class="removeBtn clickable" onclick="{ unshelve }">
     ✖
   </div>
 
-  <script></script>
+  <script>
+  unshelve() {
+    app.ctrl.unshelve(this.id);
+  }
+
+  </script>
 
 
   <style scoped>
   :scope {
     display: flex;
+    justify-content: space-between;
   }
 
   .info {

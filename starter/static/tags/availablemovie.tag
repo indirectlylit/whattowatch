@@ -10,6 +10,7 @@
       <div>{ critics_score } - Critics</div>
       <div>{ audience_score } - Audience</div>
     </div>
+
     <div class="buttons">
       <div class="clickable" onclick="{ nope }">✖</div>
       <div class="clickable" onclick="{ yep }">✔</div>
@@ -19,12 +20,11 @@
 
   <script>
   yep() {
-    console.log("hi");
-    app.ctrl.yep(this.id);
+    app.ctrl.save(this.id);
   }
 
   nope() {
-    app.ctrl.nope(this.id);
+    app.ctrl.shelve(this.id);
   }
 
   </script>

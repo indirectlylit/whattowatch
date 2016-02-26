@@ -43,8 +43,7 @@ app.ctrl.setAudMin = function(x) {
   app.trigger('update');
 };
 
-app.ctrl.yep = function(id) {
-  console.log(id);
+app.ctrl.save = function(id) {
   if (app.saved.indexOf(id) == -1) {
     app.saved.push(id);
   }
@@ -59,7 +58,7 @@ app.ctrl.yep = function(id) {
   app.trigger('update');
 };
 
-app.ctrl.nope = function(id) {
+app.ctrl.shelve = function(id) {
   if (app.shelved.indexOf(id) == -1) {
     app.shelved.push(id);
   }
@@ -73,3 +72,26 @@ app.ctrl.nope = function(id) {
   app.updateAvailableList();
   app.trigger('update');
 };
+
+
+app.ctrl.unsave = function(id) {
+  var index = app.saved.indexOf(id);
+  if (index != -1) {
+    app.saved.splice(index, 1);
+  }
+
+  app.updateAvailableList();
+  app.trigger('update');
+};
+
+
+app.ctrl.unshelve = function(id) {
+  var index = app.shelved.indexOf(id);
+  if (index != -1) {
+    app.shelved.splice(index, 1);
+  }
+
+  app.updateAvailableList();
+  app.trigger('update');
+};
+

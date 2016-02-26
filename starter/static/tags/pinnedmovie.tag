@@ -4,12 +4,17 @@
   <div class="info clickable">
     <thumbnail></thumbnail>
   </div>
-  <div class="removeBtn clickable">
+  <div class="removeBtn clickable" onclick="{ unsave }">
     ✖
   </div>
 
 
-  <script></script>
+  <script>
+  unsave() {
+    app.ctrl.unsave(this.id);
+  }
+
+  </script>
 
 
   <style scoped>
@@ -22,6 +27,7 @@
   .info {}
 
   .clickable {
+    margin-left: 5px;
     margin-right: 5px;
   }
 
