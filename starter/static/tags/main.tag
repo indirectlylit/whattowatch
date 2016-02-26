@@ -3,7 +3,9 @@
 
   <div class="main">
     <h1>What to Watch?</h1>
+    <h3>Saved</h3>
     <pinned></pinned>
+    <h3>Available</h3>
     <grid></grid>
   </div>
   <div class="filter">
@@ -25,14 +27,15 @@
   }
 
   .filter {
-    width: 35%;
     margin-right: 40px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    max-width: 500px
   }
 
   .main {
-    flex-grow: 1;
+    flex-grow: 3;
   }
 
   shelved {

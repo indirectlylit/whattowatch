@@ -5,14 +5,14 @@
     <label for="critics">Critics</label>
     <div class="range-group">
       <input type="range" id="critics" min="0" value="10" max="100" step="1">
-      <div class="value">32</div>
+      <div class="value">2</div>
     </div>
   </div>
   <div>
     <label for="audience">Audience</label>
     <div class="range-group">
       <input type="range" id="audience" min="0" value="10" max="100" step="1">
-      <div class="value">32</div>
+      <div class="value">100</div>
     </div>
   </div>
 
@@ -34,7 +34,8 @@
 
   .value {
     display: inline-block;
-    margin-left: 0.5em;
+    margin-left: 1em;
+    width: 3em;
   }
 
   </style>
