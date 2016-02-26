@@ -30,3 +30,16 @@ app.ctrl.selectMovie = function(id) {
     app.ctrl.getDetails(id);
   }
 };
+
+app.ctrl.setCritMin = function(x) {
+  app.critics_min = x;
+  app.updateAvailableList();
+  app.trigger('update');
+};
+
+app.ctrl.setAudMin = function(x) {
+  app.audience_min = x;
+  app.updateAvailableList();
+  app.trigger('update');
+};
+
