@@ -6,7 +6,7 @@
     <h3>Saved</h3>
     <pinned></pinned>
     <h3>Available</h3>
-    <grid></grid>
+    <available></available>
   </div>
   <div class="filter">
     <h2>Filter</h2>
