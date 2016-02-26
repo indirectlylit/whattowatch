@@ -4,15 +4,15 @@
   <thumbnail class="clickable"></thumbnail>
   <div class="info">
     <div class="buttons">
-      <div class="clickable"> OK </div>
+      <div class="clickable"> Maybe </div>
       <div class="clickable"> Nah </div>
     </div>
     <div class="clickable">
       <div>Title Title Title Title Title Title</div>
       <div>PG-13, 2015</div>
       <br>
-      <div><span class="score">93</span> critics</div>
-      <div><span class="score">50</span> audience</div>
+      <div><span class="score">93</span> from the critics</div>
+      <div><span class="score">50</span> from the audience</div>
     </div>
   </div>
 
@@ -23,7 +23,7 @@
   <style scoped>
   :scope {
     display: flex;
-    margin: 10px;
+    margin-bottom: 10px;
   }
 
   .buttons {

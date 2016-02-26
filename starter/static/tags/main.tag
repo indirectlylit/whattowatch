@@ -18,7 +18,7 @@
       <shelved></shelved>
     </div>
   </div>
-  <moviedetails></moviedetails>
+  <moviedetails class="hidden"></moviedetails>
 
   <script></script>
 
