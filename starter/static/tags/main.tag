@@ -1,17 +1,44 @@
 <!-- © Devon Rueckner 2016 -->
 <main>
 
-  <header>
-    <h1>Hello, world</h1>
-  </header>
-
+  <div class="main">
+    <h1>What to Watch?</h1>
+    <pinned></pinned>
+    <grid></grid>
+  </div>
+  <div class="filter">
+    <h2>Filter</h2>
+    <search></search>
+    <h3>Minimum Scores</h3>
+    <ratings></ratings>
+    <h3>Shelved</h3>
+    <shelved></shelved>
+  </div>
 
   <script></script>
 
 
   <style scoped>
-  .test {
-    background-color: yellow;
+  :scope {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .filter {
+    width: 35%;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    flex-grow: 1;
+  }
+
+  shelved {
+    display: block;
+    flex-grow: 1;
+    overflow: auto;
   }
 
   </style>

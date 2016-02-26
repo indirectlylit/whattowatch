@@ -8,13 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- © Devon Rueckner 2016 -->
   <title>What Should I Watch?</title>
-  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
   <link rel="stylesheet" href="/static/css/global.css">
   <style type="riot"></style>
 </head>
 
 <body>
   <main></main>
+  <moviedetails></moviedetails>
 
   <!-- client templates -->{% for tag in tags %}
   <script type="riot/tag" src="/static/tags/{{ tag }}"></script>
@@ -34,7 +35,6 @@
   <!-- vendor libs -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/riot/2.3.13/riot+compiler.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
   <!-- app -->
   <script src="/static/js/ctrl.js"></script>

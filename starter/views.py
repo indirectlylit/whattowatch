@@ -22,7 +22,7 @@ def main(request):
 
     context['movies'] = json.dumps([_overview(m) for m in Movie.objects.all()])
 
-    return render(request, "main.html", context=context)
+    return render(request, "index.html", context=context)
 
 
 def _overview(movie):
