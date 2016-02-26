@@ -16,12 +16,31 @@
 
 <body>
   <main></main>
-  <script type="riot/tag" src="/static/tags/main.tag"></script>
+
+  <!-- client templates -->{% for tag in tags %}
+  <script type="riot/tag" src="/static/tags/{{ tag }}"></script>
+  {% endfor %}
+
+  <!-- preload thumbnails -->{% for src in sprite_sheets %}
+  <img src="/static/thumb_sprites/{{ src }}" class="hidden">
+  {% endfor %}
+
+  <!-- initial app state -->
+  <script type="text/javascript">
+    var app = {};
+    app.sprites = {{ sprites | safe }};
+    app.movies = {{ movies | safe }};
+  </script>
+
+  <!-- vendor libs -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/riot/2.3.13/riot+compiler.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <!-- app -->
   <script src="/static/js/ctrl.js"></script>
   <script src="/static/js/main.js"></script>
+
 </body>
 
 </html>
