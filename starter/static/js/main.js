@@ -21,6 +21,5 @@ $(function() {
   riot.compile(function() {
     // get a reference to the main view
     app.rootTag = riot.mount('main')[0];
-    console.log("Hi!");
   });
 });
