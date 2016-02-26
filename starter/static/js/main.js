@@ -1,19 +1,22 @@
 /* © Devon Rueckner 2016 */
 
-
-// app namespaces
-var app = app || {};
-
+/*
+  `app` is initialized in index.html by the server.
+  `app.sprites` and `app.movies` are already populated
+*/
 
 // app can trigger events
 riot.observable(app);
 
 
 // application state
-app.state = {
-  errorText: "",
-  movies: [],
-};
+// app.selected = null; // id of movie show in lightbox, if applicable
+app.selected = "771254328"; // id of movie show in lightbox, if applicable
+
+app.movie_map = {};
+app.movies.forEach(function(m) {
+  app.movie_map[m.id] = m;
+});
 
 // app initialization
 $(function() {

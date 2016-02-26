@@ -8,7 +8,7 @@
       <div class="clickable"> Nah </div>
     </div>
     <div class="clickable">
-      <div>Title Title Title Title Title Title</div>
+      <h4>Title Title Title Title Title Title</h4>
       <div>PG-13, 2015</div>
       <br>
       <div><span class="score">93</span> from the critics</div>

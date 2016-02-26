@@ -6,11 +6,37 @@
       ✖
     </div>
     <div class="content">
-      <div><img src="/static/posters/771357524.jpg"></div>
+      <div><img src="/static/posters/{ app.selected }.jpg"></div>
       <div class="details">
-        <br> remake of Kathryn Bigelow's Point Break. Ericson Core directs from a script by Equilibrium's Kurt Wimmer. ~ Jeremy Wheeler, Rovi", "title": "Point Break", "imdb_id": "2058673", "critics_rating": "Rotten" "year": 2015, "critics_score": 9, "rt_link": "//www.rottentomatoes.com/m/point_break_2013/", "audience_score": 37, "mpaa_rating": "PG-13", "synopsis": "An undercover cop makes his way into a scene of bank-robbing extreme-sports atheletes in this
-        <br> remake of Kathryn Bigelow's Point Break. Ericson Core directs from a script by Equilibrium's Kurt Wimmer. ~ Jeremy Wheeler, Rovi", "title": "Point Break", "imdb_id": "2058673", "critics_rating": "Rotten" "year": 2015, "critics_score": 9, "rt_link": "//www.rottentomatoes.com/m/point_break_2013/", "audience_score": 37, "mpaa_rating": "PG-13", "synopsis": "An undercover cop makes his way into a scene of bank-robbing extreme-sports atheletes in this
-        <br> remake of Kathryn Bigelow's Point Break. Ericson Core directs from a script by Equilibrium's Kurt Wimmer. ~ Jeremy Wheeler, Rovi", "title": "Point Break", "imdb_id": "2058673", "critics_rating": "Rotten"
+        <h2>{ app.movie_map[app.selected].title }</h2>
+        <div>
+          { app.movie_map[app.selected].mpaa_rating },
+          { app.movie_map[app.selected].year }
+        </div>
+        <br>
+        <div>
+          <span class="score">
+            { app.movie_map[app.selected].critics_score }
+          </span>
+          from the critics
+        </div>
+        <div>
+          <span class="score">
+            { app.movie_map[app.selected].audience_score }
+          </span>
+          from the audience
+        </div>
+        <div if={ app.movie_map[app.selected].details }>
+          <p>
+            Links:
+            <a target="_blank" href="{ app.movie_map[app.selected].details.imdb_link} ">IMDB</a>
+            <a target="_blank" href="{ app.movie_map[app.selected].details.rt_link} ">Rotten Tomatoes</a>
+          </p>
+          <br>
+          <p>
+            { app.movie_map[app.selected].details.synopsis }
+          </p>
+        </div>
       </div>
     </div>
 
@@ -54,7 +80,7 @@
     }
 
     .details {
-      margin-left: 10px;
+      margin-left: 20px;
       overflow-y: auto;
       overflow-x: hidden;
     }

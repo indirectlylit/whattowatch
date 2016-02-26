@@ -7,17 +7,17 @@
 
     <div class="main">
 
-      <div class="saved">
+      <div class="col saved">
         <h2>Saved</h2>
         <pinned></pinned>
       </div>
 
-      <div class="available">
+      <div class="col available">
         <h2>Available</h2>
         <available></available>
       </div>
 
-      <div class="filter">
+      <div class="col filter">
         <h2>Filter</h2>
         <search></search>
         <h3>Minimum Scores</h3>
@@ -28,9 +28,9 @@
 
     </div>
 
-
   </div>
-  <moviedetails class="hidden"></moviedetails>
+  <!-- hack - see https://github.com/riot/riot/issues/1020#issuecomment-156388012 -->
+  <moviedetails each={app.selected ? [1]: []}></moviedetails>
 
   <script></script>
 
@@ -49,10 +49,9 @@
   }
 
   .filter {
-    margin-right: 40px;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 250px;
   }
 
   .available {
@@ -61,6 +60,16 @@
 
   .saved {
     flex-grow: 0;
+  }
+
+  .col {
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+
+  .col > h2,
+  .col > h3 {
+    margin-left: -10px;
   }
 
   @media screen and (max-width: 800px) {
