@@ -19,14 +19,6 @@ app.saved = [];
 app.shelved = [];
 
 
-// make a map for efficient look-up
-// also, add an 'average' rating for sorting
-app.movie_map = {};
-app.movies.forEach(function(m) {
-  app.movie_map[m.id] = m;
-  m.avg_score = (m.audience_score + m.critics_score) / 2;
-});
-
 // sort movies by average rating
 app.movies.sort(function(a, b) {
   if (a.avg_score < b.avg_score) {
@@ -38,18 +30,27 @@ app.movies.sort(function(a, b) {
 });
 
 
+// set the list of available IDs based on current app state
 app.updateAvailableList = function() {
   app.available = app.movies.filter(function(movie) {
-    if (movie.critics_score < app.critics_min) {
-      return false;
-    } else if (movie.audience_score < app.audience_min) {
-      return false;
-    }
-    return true;
-  });
+      if (movie.critics_score < app.critics_min) {
+        return false;
+      } else if (movie.audience_score < app.audience_min) {
+        return false;
+      }
+      return true;
+    })
+    .map(function(movie) {
+      return movie.id;
+    });
 };
 
-app.updateAvailableList();
+
+// check if an ID is available
+app.isAvailable = function(id) {
+  return app.available.indexOf(id) != -1;
+};
+
 
 // globally update views when the model changes
 app.on('update', function() {
@@ -59,6 +60,16 @@ app.on('update', function() {
 
 // app initialization
 $(function() {
+  // make a map for efficient look-up
+  // also, add an 'average' rating for sorting
+  app.movie_map = {};
+  app.movies.forEach(function(m) {
+    app.movie_map[m.id] = m;
+    m.avg_score = (m.audience_score + m.critics_score) / 2;
+  });
+
+  app.updateAvailableList();
+
   // compile tags
   riot.compile(function() {
     // get a reference to the main view

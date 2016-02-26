@@ -27,7 +27,7 @@ def main(request):
 
 def _overview(movie):
     return {
-        'id': movie.rt_id,
+        'id': int(movie.rt_id),
         'audience_score': movie.audience_score,
         'critics_score': movie.critics_score,
         'title': movie.title,

@@ -1,5 +1,5 @@
 <!-- © Devon Rueckner 2016 -->
-<availablemovie>
+<availablemovie class="{ hidden: !app.isAvailable(id) }">
 
   <thumbnail class="clickable"></thumbnail>
   <div class="info">

@@ -1,7 +1,7 @@
 <!-- © Devon Rueckner 2016 -->
 <available>
 
-  <availablemovie each={ app.available }></availablemovie>
+  <availablemovie each={ app.movies }></availablemovie>
 
   <script></script>
 
