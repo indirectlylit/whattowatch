@@ -29,6 +29,11 @@
         <div if={ app.movie_map[app.selected].details }>
           { app.movie_map[app.selected].details.synopsis }
         </div>
+        <br>
+        <div class="buttons">
+          <div class="clickable">✔</div>
+          <div class="clickable">✖</div>
+        </div>
       </div>
     </div>
 

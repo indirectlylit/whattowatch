@@ -3,16 +3,16 @@
 
   <thumbnail class="clickable"></thumbnail>
   <div class="info">
-    <div class="buttons">
-      <div class="clickable"> Maybe </div>
-      <div class="clickable"> Nah </div>
-    </div>
-    <div class="clickable">
-      <h4>Title Title Title Title Title Title</h4>
-      <div>PG-13, 2015</div>
+    <div>
+      <div class="title">{ title }</div>
+      <div>{ mpaa_rating }, { year }</div>
       <br>
-      <div><span class="score">93</span> from the critics</div>
-      <div><span class="score">50</span> from the audience</div>
+      <div>{ critics_score } - Critics</div>
+      <div>{ audience_score } - Audience</div>
+    </div>
+    <div class="buttons">
+      <div class="clickable">✔</div>
+      <div class="clickable">✖</div>
     </div>
   </div>
 
@@ -26,16 +26,8 @@
     margin-bottom: 10px;
   }
 
-  .buttons {
-    display: flex;
-    margin-bottom: 10px;
+  .title {
     font-weight: bold;
-    font-size: larger;
-  }
-
-  .buttons .clickable {
-    padding: 10px;
-    margin: 5px;
   }
 
   .info {

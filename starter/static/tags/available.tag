@@ -1,15 +1,7 @@
 <!-- © Devon Rueckner 2016 -->
 <available>
 
-  <availablemovie></availablemovie>
-  <availablemovie></availablemovie>
-  <availablemovie></availablemovie>
-  <availablemovie></availablemovie>
-  <availablemovie></availablemovie>
-  <availablemovie></availablemovie>
-  <availablemovie></availablemovie>
-  <availablemovie></availablemovie>
-  <availablemovie></availablemovie>
+  <availablemovie each={ app.movies }></availablemovie>
 
   <script></script>
 

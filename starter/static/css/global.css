@@ -23,16 +23,24 @@ h1 {
   text-align: center;
 }
 
-.scroll {
-  overflow-y: auto;
-}
-
 .clickable {
   cursor: pointer;
 }
 
 .clickable:hover {
   color: white;
+}
+
+.buttons {
+  display: flex;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.buttons .clickable {
+  padding: 10px;
+  margin: 5px;
 }
 
 a {
@@ -42,3 +50,4 @@ a {
 a:hover {
   color: white;
 }
+

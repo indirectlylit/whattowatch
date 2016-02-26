@@ -1,7 +1,7 @@
 <!-- © Devon Rueckner 2016 -->
 <search>
 
-  <input type="text" name="searchBox" placeholder="title, actors, year…" onkeyup={ keyup }>
+  <input type="text" name="searchBox" placeholder="search…" onkeyup={ keyup }>
   <button title="Clear (esc)" onclick={ reset } class="clickable">✖</button>
 
   <script>
