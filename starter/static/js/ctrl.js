@@ -95,3 +95,9 @@ app.ctrl.unshelve = function(id) {
   app.trigger('update');
 };
 
+
+app.ctrl.setSearch = function(text) {
+  app.search = text.toLowerCase();
+  app.updateAvailableList();
+  app.trigger('update');
+};

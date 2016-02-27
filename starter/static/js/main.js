@@ -30,6 +30,8 @@ app.updateAvailableList = function() {
         return false;
       } else if (app.shelved.indexOf(movie.id) != -1) {
         return false;
+      } else if (app.search && movie.title.toLowerCase().indexOf(app.search) == -1) {
+        return false;
       }
       return true;
     })

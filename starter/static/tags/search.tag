@@ -5,40 +5,40 @@
   <button title="Clear (esc)" onclick={ reset } class="clickable">✖</button>
 
   <script>
+  reset() {
+    this.searchBox.value = "";
+    app.ctrl.setSearch("");
+    this.searchBox.focus();
+  }
 
-    reset() {
+  keyup(e) {
+    if (e.keyCode == 27) {
       this.searchBox.value = "";
-      this.searchBox.focus();
     }
+    this.throttledSet(this.searchBox.value);
+  }
 
-    keyup(e) {
-      switch(e.keyCode) {
-        case 13: // 'enter' handled by 'onsubmit' event
-          return;
-        case 27: // 'esc'
-          this.searchBox.value = "";
-          return;
-      }
-    }
+  this.throttledSet = _.throttle(function(val) {
+    app.ctrl.setSearch(val);
+  }, 150);
 
   </script>
 
 
   <style scoped>
+  :scope {
+    display: flex;
+  }
 
-    :scope {
-      display: flex;
-    }
+  input {
+    width: 100%;
+  }
 
-    input {
-      width: 100%;
-    }
-
-    button {
-      padding-left: 1em;
-      border: none;
-      background: none;
-    }
+  button {
+    padding-left: 1em;
+    border: none;
+    background: none;
+  }
 
   </style>
 
