@@ -8,21 +8,22 @@
     <div class="main">
 
       <div class="col saved { hidden: !app.saved.length }">
-        <h2>Saved <span class="count">({ app.saved.length })</span></h2>
+        <h2>Yup <span class="count">({ app.saved.length })</span></h2>
         <saved></saved>
       </div>
 
       <div class="col available">
-        <h2>Available <span class="count">({ app.available.length })</span></h2>
+        <h2>Maybe <span class="count">({ app.available.length })</span></h2>
         <available></available>
       </div>
 
       <div class="col filter">
-        <h2>Filter</h2>
+        <h2>Nope <span class="count">({ app.movies.length - app.available.length - app.saved.length })</h2>
         <search></search>
+        <chart></chart>
         <h3>Minimum Scores</h3>
         <ratings></ratings>
-        <h3 class="{ hidden: !app.shelved.length }">Shelved <span class="count">({ app.shelved.length })</span></h3>
+        <h3 class="{ hidden: !app.shelved.length }">Shelved</span></h3>
         <shelved></shelved>
       </div>
 
@@ -65,11 +66,6 @@
   .col {
     margin-left: 30px;
     margin-right: 10px;
-  }
-
-  .col > h2,
-  .col > h3 {
-    margin-left: -10px;
   }
 
   @media screen and (max-width: 800px) {

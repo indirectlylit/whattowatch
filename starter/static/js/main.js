@@ -67,6 +67,10 @@ app.on('update', function() {
 
 // app initialization
 $(function() {
+  // remove entries that don't have both ratings
+  app.movies = app.movies.filter(function(m) {
+    return m.audience_score >= 0 && m.critics_score >= 0;
+  });
   // make a map for efficient look-up
   // also, add an 'average' rating for sorting
   app.movie_map = {};
