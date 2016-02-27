@@ -51,3 +51,8 @@ a:hover {
   color: white;
 }
 
+.count {
+  font-size: 10pt;
+  position: relative;
+  top: -1px;
+}

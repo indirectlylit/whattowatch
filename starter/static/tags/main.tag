@@ -8,12 +8,12 @@
     <div class="main">
 
       <div class="col saved { hidden: !app.saved.length }">
-        <h2>Saved</h2>
+        <h2>Saved <span class="count">({ app.saved.length })</span></h2>
         <saved></saved>
       </div>
 
       <div class="col available">
-        <h2>Available</h2>
+        <h2>Available <span class="count">({ app.available.length })</span></h2>
         <available></available>
       </div>
 
@@ -22,7 +22,7 @@
         <search></search>
         <h3>Minimum Scores</h3>
         <ratings></ratings>
-        <h3 class="{ hidden: !app.shelved.length }">Shelved</h3>
+        <h3 class="{ hidden: !app.shelved.length }">Shelved <span class="count">({ app.shelved.length })</span></h3>
         <shelved></shelved>
       </div>
 
