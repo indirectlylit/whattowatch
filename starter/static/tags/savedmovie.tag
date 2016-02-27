@@ -1,5 +1,5 @@
 <!-- © Devon Rueckner 2016 -->
-<pinnedmovie class="{ hidden: !app.isSaved(id) }">
+<savedmovie class="{ hidden: !app.isSaved(id) }">
 
   <div class="info clickable" onclick="{ select }">
     <thumbnail></thumbnail>
@@ -37,4 +37,4 @@
 
   </style>
 
-</pinnedmovie>
+</savedmovie>

@@ -9,7 +9,7 @@
 
       <div class="col saved { hidden: !app.saved.length }">
         <h2>Saved</h2>
-        <pinned></pinned>
+        <saved></saved>
       </div>
 
       <div class="col available">

@@ -1,7 +1,7 @@
 <!-- © Devon Rueckner 2016 -->
-<pinned>
+<saved>
 
-  <pinnedmovie each={ app.movies }></pinnedmovie>
+  <savedmovie each={ app.movies }></savedmovie>
 
   <script></script>
 
@@ -13,4 +13,4 @@
 
   </style>
 
-</pinned>
+</saved>
