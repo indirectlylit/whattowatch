@@ -10,7 +10,7 @@ Any item can be opened to see additional details and get linked to other informa
 
 The initial concept was to include a small D3-based data-visualization in the top-left corner which showed the distribution of audience and critic ratings, as well as the current saved/shelved state:
 
-![Screenshot](sketch.jpg)
+![Sketch](sketch.jpg)
 
 Unfortunately, there wasn't enough time.
 
@@ -46,5 +46,5 @@ python manage.py runserver
 
 All code is freely usable under the MIT license.
 
-Data is from the Rotten Tomatoes API and may be copywrited by them. Also there are some posters in here, which are probably copyrighted by the studios. 
+Data is from the Rotten Tomatoes API and may be copyrighted by them? Also there are some posters in here, which are probably copyrighted by the studios. 
 
