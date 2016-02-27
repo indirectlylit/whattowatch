@@ -23,6 +23,7 @@
         <chart></chart>
         <h3>Minimum Scores</h3>
         <ratings></ratings>
+        <br>
         <h3 class="{ hidden: !app.shelved.length }">Shelved</span></h3>
         <shelved></shelved>
       </div>
@@ -67,6 +68,25 @@
     margin-left: 30px;
     margin-right: 10px;
   }
+
+  .count {
+    font-size: 10pt;
+    position: relative;
+    top: -1px;
+  }
+
+  .available .count {
+    color: #129FEA;
+  }
+
+  .saved .count {
+    color: #BD4B1E;
+  }
+
+  .filter .count {
+    color: #6F6F6F;
+  }
+
 
   @media screen and (max-width: 800px) {
     .main {

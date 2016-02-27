@@ -17,11 +17,11 @@
 
   app.chart.x_scale = d3.scale.linear()
     .domain([0, 100])
-    .range([app.chart.width, 0]);
+    .range([0, app.chart.width]);
 
   app.chart.y_scale = d3.scale.linear()
     .domain([0, 100])
-    .range([0, app.chart.height]);
+    .range([app.chart.height, 0]);
 
   app.chart.colors = {
     available: '#129FEA',
@@ -48,6 +48,18 @@
       .attr("height", app.chart.height + app.chart.margin.top + app.chart.margin.bottom)
       .append("g")
       .attr("transform", "translate(" + app.chart.margin.left + "," + app.chart.margin.top + ")");
+
+    app.chart.crit_thresh = app.chart.svg
+      .append('line')
+      .attr('class', 'threshold')
+      .attr("x1", app.chart.x_scale(0))
+      .attr("x2", app.chart.x_scale(100));
+
+    app.chart.aud_thresh = app.chart.svg
+      .append('line')
+      .attr('class', 'threshold')
+      .attr("y1", app.chart.y_scale(0))
+      .attr("y2", app.chart.y_scale(100));
 
     app.chart.svg.append("g")
       .attr("class", "x axis")
@@ -76,16 +88,16 @@
       .enter().append("circle")
       .attr("class", "dot")
       .attr("cx", function(movie) {
-        return app.chart.y_scale(movie.audience_score);
+        return app.chart.x_scale(movie.audience_score);
       })
       .attr("cy", function(movie) {
-        return app.chart.x_scale(movie.critics_score);
+        return app.chart.y_scale(movie.critics_score);
       });
 
-    app.chart.updateDots();
+    app.chart.updateChart();
   });
 
-  app.chart.updateDots = function() {
+  app.chart.updateChart = function() {
     app.chart.svg.selectAll(".dot")
       .data(app.movies)
       .attr("r", function(movie){
@@ -102,10 +114,28 @@
         }
         return app.chart.colors.filtered;
       });
+
+    app.chart.crit_thresh
+      .attr("y1", function(movie) {
+        return app.chart.y_scale(app.critics_min);
+      })
+      .attr("y2", function(movie) {
+        return app.chart.y_scale(app.critics_min);
+      });
+
+
+    app.chart.aud_thresh
+      .attr("x1", function(movie) {
+        return app.chart.x_scale(app.audience_min);
+      })
+      .attr("x2", function(movie) {
+        return app.chart.x_scale(app.audience_min);
+      });
+
   };
 
   app.on('update', function() {
-    app.chart.updateDots();
+    app.chart.updateChart();
   });
 
   </script>
@@ -120,6 +150,12 @@
   .chart {
     position: relative;
     left: -10px;
+  }
+
+  .threshold {
+    fill: none;
+    stroke: #6F6F6F;
+    shape-rendering: crispEdges;
   }
 
   .axis path,
