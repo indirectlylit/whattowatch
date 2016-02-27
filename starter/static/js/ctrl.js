@@ -22,7 +22,7 @@ app.ctrl.getDetails = function(id) {
     });
 };
 
-app.ctrl.selectMovie = function(id) {
+app.ctrl.select = function(id) {
   app.selected = id;
   app.trigger('update');
 

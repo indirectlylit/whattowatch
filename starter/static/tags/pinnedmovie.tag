@@ -1,7 +1,7 @@
 <!-- © Devon Rueckner 2016 -->
 <pinnedmovie class="{ hidden: !app.isSaved(id) }">
 
-  <div class="info clickable">
+  <div class="info clickable" onclick="{ select }">
     <thumbnail></thumbnail>
   </div>
   <div class="removeBtn clickable" onclick="{ unsave }">
@@ -12,6 +12,10 @@
   <script>
   unsave() {
     app.ctrl.unsave(this.id);
+  }
+
+  select() {
+    app.ctrl.select(this.id);
   }
 
   </script>

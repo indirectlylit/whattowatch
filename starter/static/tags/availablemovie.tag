@@ -1,12 +1,14 @@
 <!-- © Devon Rueckner 2016 -->
 <availablemovie class="{ hidden: !app.isAvailable(id) }">
 
-  <thumbnail class="clickable"></thumbnail>
+  <thumbnail class="clickable" onclick="{ select }"></thumbnail>
   <div class="info">
-    <div>
+    <div class="clickable" onclick="{ select }">
       <div class="title">{ title }</div>
       <div>{ mpaa_rating }, { year }</div>
-      <br>
+    </div>
+    <br>
+    <div>
       <div>{ critics_score } - Critics</div>
       <div>{ audience_score } - Audience</div>
     </div>
@@ -25,6 +27,10 @@
 
   nope() {
     app.ctrl.shelve(this.id);
+  }
+
+  select() {
+    app.ctrl.select(this.id);
   }
 
   </script>
