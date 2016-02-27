@@ -8,7 +8,7 @@ The app revolves around a Tinder-like 'yup' / 'nope' experience, with some addit
 
 Any item can be opened to see additional details and get linked to other informational sites.
 
-A small visualization is included in the top-left corner which shows the distribution of audience and critic ratings, as well as the current saved/shelved state.
+A small visualization is included in the top-left corner which shows the distribution of audience and critic ratings, as well as the current saved/shelved state. The audience and critic minimum ratings can be adjusted concurrently using the draggable handle in the chart.
 
 ## Requirements & Setup
 
@@ -23,7 +23,7 @@ python manage.py runserver
 
 ## Implementation Notes
 
-* Data pre-processing is performed using a Jupyter notebook in the `data-utils` directory.
+* Data extraction and pre-processing is performed using a [Jupyter](http://jupyter.org/) Python notebook in the `data-utils` directory.
 * Poster thumbnails are delivered in sprite sheets for efficiency.
 * High-level data is included with the initial request by the server so all filtering can happen client-side. Additional movie meta-data is retrieved on-demand.
 * Front-end is implemented in [riot.js](http://riotjs.com/).
@@ -33,11 +33,12 @@ python manage.py runserver
 
 ## Missing Features
 
-* Data visualization as sketched above
 * Ability to handle an arbitrary number of movies. Current limit is unknown.
 * Check if it's available to stream on Netflix
-* User customization, including saving and ranking
+* Per-user customization, including saving app state
 * Better layout and scrolling behaviors
+* Convert Jupyter notebook to command-line Python scripts
+* Ensemble RNN-based recommendation engine
 * ...
 
 

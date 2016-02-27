@@ -32,13 +32,17 @@ app.ctrl.select = function(id) {
 };
 
 app.ctrl.setCritMin = function(x) {
-  app.critics_min = x;
+  x = x < 0 ? 0 : x;
+  x = x > 100 ? 100 : x;
+  app.critics_min = Math.round(x);
   app.updateAvailableList();
   app.trigger('update');
 };
 
 app.ctrl.setAudMin = function(x) {
-  app.audience_min = x;
+  x = x < 0 ? 0 : x;
+  x = x > 100 ? 100 : x;
+  app.audience_min = Math.round(x);
   app.updateAvailableList();
   app.trigger('update');
 };

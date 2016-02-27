@@ -40,6 +40,12 @@
     .ticks(5)
     .orient("left");
 
+  app.chart.drag = d3.behavior.drag();
+  app.chart.drag.on('drag', function(e){
+    app.ctrl.setCritMin(app.chart.y_scale.invert(d3.event.y));
+    app.ctrl.setAudMin(app.chart.x_scale.invert(d3.event.x));
+  });
+
   this.on('mount', function() {
 
     app.chart.svg = d3.select(".chart")
@@ -52,7 +58,6 @@
     app.chart.crit_thresh = app.chart.svg
       .append('line')
       .attr('class', 'threshold')
-      .attr("x1", app.chart.x_scale(0))
       .attr("x2", app.chart.x_scale(100));
 
     app.chart.aud_thresh = app.chart.svg
@@ -94,13 +99,20 @@
         return app.chart.y_scale(movie.critics_score);
       });
 
+    app.chart.handle = app.chart.svg
+      .append("circle")
+      .attr("class", "handle")
+      .attr("r", 6.5);
+
+    app.chart.handle.call(app.chart.drag);
+
     app.chart.updateChart();
   });
 
   app.chart.updateChart = function() {
     app.chart.svg.selectAll(".dot")
       .data(app.movies)
-      .attr("r", function(movie){
+      .attr("r", function(movie) {
         if (app.isSaved(movie.id)) {
           return 3;
         }
@@ -115,21 +127,37 @@
         return app.chart.colors.filtered;
       });
 
+    var crit_min = app.chart.y_scale(app.critics_min),
+      aud_min = app.chart.x_scale(app.audience_min);
+
     app.chart.crit_thresh
+      .attr("x1", function(movie) {
+        return aud_min;
+      })
       .attr("y1", function(movie) {
-        return app.chart.y_scale(app.critics_min);
+        return crit_min;
       })
       .attr("y2", function(movie) {
-        return app.chart.y_scale(app.critics_min);
+        return crit_min;
       });
 
-
     app.chart.aud_thresh
+      .attr("y1", function(movie) {
+        return crit_min;
+      })
       .attr("x1", function(movie) {
-        return app.chart.x_scale(app.audience_min);
+        return aud_min;
       })
       .attr("x2", function(movie) {
-        return app.chart.x_scale(app.audience_min);
+        return aud_min;
+      });
+
+    app.chart.handle
+      .attr("cx", function(movie) {
+        return aud_min;
+      })
+      .attr("cy", function(movie) {
+        return crit_min;
       });
 
   };
@@ -167,6 +195,12 @@
 
   .dot {
     stroke: none;
+  }
+
+  .handle {
+    fill: #e8e8e8;
+    stroke: #949494;
+    stroke-width: 1;
   }
 
   </style>
