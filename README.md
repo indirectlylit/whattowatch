@@ -27,6 +27,7 @@ python manage.py runserver
 * Poster thumbnails are delivered in sprite sheets for efficiency.
 * High-level data is included with the initial request by the server so all filtering can happen client-side. Additional movie meta-data is retrieved on-demand.
 * Front-end is implemented in [riot.js](http://riotjs.com/).
+* Chart built with [D3.js](https://d3js.org/)
 * For the sake of simplicity, this Django application conflates the concept of 'projects' and 'apps', putting both into a hybrid project/app module called `starter`.
 
 
