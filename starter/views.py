@@ -42,7 +42,7 @@ def _details(movie):
         'runtime': movie.runtime,
         'synopsis': movie.synopsis,
         'imdb_id': movie.imdb_id,
-        'actors': movie.actors,
+        'actors': json.loads(movie.actors),
         'audience_rating': movie.audience_rating,
         'critics_rating': movie.critics_rating,
     }
