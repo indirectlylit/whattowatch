@@ -8,11 +8,7 @@ The app revolves around a Tinder-like 'yup' / 'nope' experience, with some addit
 
 Any item can be opened to see additional details and get linked to other informational sites.
 
-The initial concept was to include a small D3-based data-visualization in the top-left corner which showed the distribution of audience and critic ratings, as well as the current saved/shelved state:
-
-![Sketch](sketch.jpg)
-
-Unfortunately, there wasn't enough time.
+A small visualization is included in the top-left corner which shows the distribution of audience and critic ratings, as well as the current saved/shelved state.
 
 ## Requirements & Setup
 
@@ -40,7 +36,16 @@ python manage.py runserver
 * Ability to handle an arbitrary number of movies. Current limit is unknown.
 * Check if it's available to stream on Netflix
 * User customization, including saving and ranking
+* Better layout and scrolling behaviors
 * ...
+
+
+## Design
+
+The initial sketch, based on the use case: "what should I watch next?"
+
+![Sketch](sketch.jpg)
+
 
 ## Copyright
 
