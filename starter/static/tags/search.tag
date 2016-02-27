@@ -32,12 +32,15 @@
 
   input {
     width: 100%;
+    margin-right: -10px;
   }
 
   button {
     padding-left: 1em;
     border: none;
     background: none;
+    position: relative;
+    right: 20px;
   }
 
   </style>

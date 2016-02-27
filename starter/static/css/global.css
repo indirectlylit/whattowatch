@@ -15,9 +15,10 @@ body {
 }
 
 input[type=text] {
-  background-color: #151515;
-  border: none;
+  background-color: #383838;
+  border: 1px solid #6F6F6F;
   padding-left: 5px;
+  border-radius: 2px;
 }
 
 h1 {
