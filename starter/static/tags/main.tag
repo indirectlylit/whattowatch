@@ -40,7 +40,7 @@
 
   .wrapper {
     margin: auto;
-    max-width: 1000px;
+    width: 800px;
   }
 
   .main {
