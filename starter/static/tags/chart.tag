@@ -24,10 +24,9 @@
     .range([app.chart.height, 0]);
 
   app.chart.colors = {
-    available: '#129FEA',
-    saved: '#BD4B1E',
-    filtered: '#6F6F6F',
-    hover: '#FFFFFF',
+    available: '#129fea',
+    saved: '#bd4b1e',
+    filtered: '#6f6f6f',
   };
 
   app.chart.xAxis = d3.svg.axis()
@@ -41,29 +40,25 @@
     .orient("left");
 
   app.chart.drag = d3.behavior.drag();
-  app.chart.drag.on('drag', function(e){
+  app.chart.drag.on('drag', function() {
     app.ctrl.setCritMin(app.chart.y_scale.invert(d3.event.y));
     app.ctrl.setAudMin(app.chart.x_scale.invert(d3.event.x));
   });
 
   this.on('mount', function() {
 
-    app.chart.svg = d3.select(".chart")
-      .append("svg")
+    app.chart.svg = d3.select(".chart").append("svg")
       .attr("width", app.chart.width + app.chart.margin.left + app.chart.margin.right)
       .attr("height", app.chart.height + app.chart.margin.top + app.chart.margin.bottom)
       .append("g")
       .attr("transform", "translate(" + app.chart.margin.left + "," + app.chart.margin.top + ")");
 
-    app.chart.crit_thresh = app.chart.svg
-      .append('line')
+    app.chart.crit_thresh = app.chart.svg.append('line')
       .attr('class', 'threshold')
       .attr("x2", app.chart.x_scale(100));
 
-    app.chart.aud_thresh = app.chart.svg
-      .append('line')
+    app.chart.aud_thresh = app.chart.svg.append('line')
       .attr('class', 'threshold')
-      .attr("y1", app.chart.y_scale(0))
       .attr("y2", app.chart.y_scale(100));
 
     app.chart.svg.append("g")
@@ -99,8 +94,7 @@
         return app.chart.y_scale(movie.critics_score);
       });
 
-    app.chart.handle = app.chart.svg
-      .append("circle")
+    app.chart.handle = app.chart.svg.append("circle")
       .attr("class", "handle")
       .attr("r", 6.5);
 
@@ -113,10 +107,7 @@
     app.chart.svg.selectAll(".dot")
       .data(app.movies)
       .attr("r", function(movie) {
-        if (app.isSaved(movie.id)) {
-          return 3;
-        }
-        return 2;
+        return app.isSaved(movie.id) ? 3 : 2;
       })
       .style("fill", function(movie) {
         if (app.isAvailable(movie.id)) {
@@ -127,44 +118,25 @@
         return app.chart.colors.filtered;
       });
 
-    var crit_min = app.chart.y_scale(app.critics_min),
-      aud_min = app.chart.x_scale(app.audience_min);
+    var crit_min_pos = app.chart.y_scale(app.critics_min),
+      aud_min_pos = app.chart.x_scale(app.audience_min);
 
     app.chart.crit_thresh
-      .attr("x1", function(movie) {
-        return aud_min;
-      })
-      .attr("y1", function(movie) {
-        return crit_min;
-      })
-      .attr("y2", function(movie) {
-        return crit_min;
-      });
+      .attr("x1", aud_min_pos)
+      .attr("y1", crit_min_pos)
+      .attr("y2", crit_min_pos);
 
     app.chart.aud_thresh
-      .attr("y1", function(movie) {
-        return crit_min;
-      })
-      .attr("x1", function(movie) {
-        return aud_min;
-      })
-      .attr("x2", function(movie) {
-        return aud_min;
-      });
+      .attr("y1", crit_min_pos)
+      .attr("x1", aud_min_pos)
+      .attr("x2", aud_min_pos);
 
     app.chart.handle
-      .attr("cx", function(movie) {
-        return aud_min;
-      })
-      .attr("cy", function(movie) {
-        return crit_min;
-      });
-
+      .attr("cx", aud_min_pos)
+      .attr("cy", crit_min_pos);
   };
 
-  app.on('update', function() {
-    app.chart.updateChart();
-  });
+  app.on('update', app.chart.updateChart);
 
   </script>
 
@@ -182,7 +154,7 @@
 
   .threshold {
     fill: none;
-    stroke: #6F6F6F;
+    stroke: #6f6f6f;
     shape-rendering: crispEdges;
   }
 
